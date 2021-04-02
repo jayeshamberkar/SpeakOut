@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CommonMasterPage.master.cs" Inherits="Speakoutsign.Common_CommonMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+
+
+   <%-- <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <link href="../assets/css/style.css" rel="stylesheet" />--%>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       
+        .auto-style1 {
+            width: 1367px;
+            height: 180px;
+            margin-top: 80px;
+        }
+       
+    </style>
+</head>
+<body style="background-color: #99FFCC">
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:1355px;">
+                <tr>
+                    <td colspan="6" >
+                          <asp:Image ID="image1"
+                    runat="server" ImageUrl="~/iocns/SpeakOut1.jpg" ImageAlign="Middle" Height="112px" Width="1355px" Border-color="#666666" BorderWidth="3px" />
+                    </td>
+                    
+                </tr>
+                <tr class="nav">
+            <td >
+            <ul>
+                <li>
+                    <a href ="../Users/Default.aspx">Home</a>
+                </li>
+               <%-- <li>
+                    <a href ="#">Top news</a>
+                </li>
+                <li>
+                    <a href ="#">Category</a>
+                    <ul>
+                        <li>
+                    <a href ="#">Sports</a>
+                </li>
+                        <li>
+                    <a href ="#">COVID-19</a>
+                </li>
+                        <li>
+                    <a href ="#">Celebraties</a>
+                </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href ="#">Location</a>
+                </li>
+                <li>
+                    <a href ="#">Language</a>
+
+                </li>--%>
+                <li>
+                    <a href ="../Users/aboutus.aspx">About us</a>
+                </li>
+            </ul>
+                </td>
+       </tr>
+
+
+                <%--<tr style="font-size: large; font-weight: bold; background-color: #5f98f3; text-align: center;">
+                <td colspan="2">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Users/Default.aspx" Text="Home" Height="30px" ForeColor="#003300" Font-Bold="true" Font-Names="Century" Font-Underline="true" Font-Size="Large"></asp:HyperLink>
+                     &nbsp;</td>
+                <td colspan="2">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="#" Text="Home" Height="30px"  ForeColor="#003300" Font-Bold="true" Font-Names="Century" Font-Underline="true" Font-Size="Large">About Us</asp:HyperLink>
+                     &nbsp;
+                </td>
+                     <td colspan="2">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Common/Registration.aspx" Text="Home" Height="30px"  ForeColor="#003300" Font-Bold="true" Font-Names="Century" Font-Underline="true" Font-Size="Large">Register</asp:HyperLink>
+                     &nbsp;
+                </td>
+
+                
+            </tr>--%>
+
+             
+            </table>
+          
+         
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                 
+            </asp:ContentPlaceHolder>
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                         &nbsp;
+                    </td>
+                </tr>
+                
+                <tr style="width:1367px; height: 25px; background-color: #1865f3; text-align: center; color: #FFFFFF;">
+                    <td>
+                        &copy;SpeakOut News Website Pvt. | All rights reserved. 2021
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
+

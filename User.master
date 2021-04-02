@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="Speakoutsign.Users_User" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+  
+    <link href="../Assets/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 431px;
+        }
+    </style>
+</head>
+<body style="background-color: #99FFCC">
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:1355px; /*border-color:#5f98f3; background-color:white;*/">
+            <tr><td colspan="4">
+                 <asp:Image ID="image1"
+                    runat="server" ImageUrl="~/iocns/SpeakOut1.jpg" ImageAlign="Middle" Height="112px" Width="1355px" Border-color="#666666" BorderWidth="3px"/>
+                </td>
+
+            </tr>
+        <tr class="nav">
+            <td>
+            <ul>
+                <li>
+                    <a href ="Default.aspx">Home</a>
+                </li>
+                
+                <li>
+                    <a  aria-readonly="True">Category</a>
+                  
+                    <ul>
+                        <%--<li>
+                    <a href ="technology.aspx" id="technology">Technology</a>
+                </li>--%>
+                        <li>
+                    <a href ="covid.aspx" id="covid">COVID-19</a>
+                </li>
+                        <li>
+                    
+                            <a href="sports.aspx" id="sports">Sports</a>
+                </li>
+                        <li>
+                    <a href ="celebraties.aspx" id="celebraties">Crime</a>
+                </li>
+                        <li>
+                    <a href ="others.aspx" id="others">Others</a>
+                </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Cities</a>
+                    <ul>
+                        <li>
+                    <a href ="mumbai.aspx">Mumbai</a>
+                </li>
+                        <li>
+                    <a href ="chennai.aspx">Nagpur</a>
+                </li>
+                       
+                        <li>
+                    <a href ="nashik.aspx">Nashik</a>
+                </li>
+                       <%-- <li>
+                    <a href ="othersc.aspx">Others</a>
+                </li>--%>
+                    </ul>
+                </li>
+                <li>
+                    <a>Language</a>
+                    <ul>
+                        <li>
+                    <a href ="english.aspx">English</a>
+                </li>
+                       <%-- <li>
+                    <a href ="hindi.aspx">Hindi</a>
+                </li>
+                       
+                        <li>
+                    <a href ="othersla.aspx">Others</a>
+                </li>--%>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="Add news.aspx">Add News</a>
+                </li>
+                <li>
+                    <a href ="../Common/Registration.aspx">Register</a>
+                </li>
+                <li>
+                    <a href="aboutus.aspx">About Us</a>
+                </li>
+                
+            </ul>
+                </td>
+       </tr>
+   </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <table style="width:1367px">
+                <tr style="width:1367px; height: 25px; background-color: #1865f3; text-align: center; color: #FFFFFF;">
+                    <td>
+                        &copy;SpeakOut News Website Pvt. | All rights reserved. 2021
+                    </td>
+                </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
